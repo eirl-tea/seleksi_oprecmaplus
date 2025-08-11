@@ -75,7 +75,7 @@ const peserta = [
       {
         name: "Anggita Anggraini Wijaya",
         email: "anggitaanggraini155@gmail.com",
-        phone: "098520139351",
+        phone: "930985201351",
         class: "10 A",
         passed: true,
         club: "D'GRAPH"
@@ -91,7 +91,7 @@ const peserta = [
       {
         name: "NUNARINALHAQ",
         email: "nunarinalh123@gmail.com",
-        phone: "085576585649",
+        phone: "585640855769",
         class: "10 I",
         passed: false,
         club: "D'GRAPH"
@@ -99,7 +99,7 @@ const peserta = [
       {
         name: "Iqbal Zaky Akrom",
         email: "iqbalzaky954@gmail.com",
-        phone: "081252170068",
+        phone: "688125217000",
         class: "10",
         passed: false,
         club: "MULTIMEDIA"
@@ -107,7 +107,7 @@ const peserta = [
       {
         name: "MUHAMAD NOVAL FERDIAN RISQULLA",
         email: "novalferdianrizqulla041109@gmailm.com",
-        phone: "083846024154",
+        phone: "441506028384",
         class: "10 H",
         passed: true,
         club: "MULTIMEDIA"
@@ -115,7 +115,7 @@ const peserta = [
       {
         name: "MUHAMAD NOVAL FERDIAN RISQULLA",
         email: "novalferdianrizqulla041109@gmail.com",
-        phone: "083846024154",
+        phone: "854446021083",
         class: "10 H",
         passed: true,
         club: "MULTIMEDIA"
@@ -123,7 +123,7 @@ const peserta = [
       {
         name: "maria azzahra tsabit rahman",
         email: "mariaazzahrats@gmail.com",
-        phone: "085792405203",
+        phone: "040522038579",
         class: "10 G",
         passed: true,
         club: "MULTIMEDIA"
@@ -131,7 +131,7 @@ const peserta = [
       {
         name: "Ahmad Riffat jazmi asyhar",
         email: "jazmiasyhar123@gmail.com",
-        phone: "087719320599",
+        phone: "877159903209",
         class: "10",
         passed: false,
         club: "MULTIMEDIA"
@@ -139,7 +139,7 @@ const peserta = [
       {
         name: "Muh Raihan Al Hafizh",
         email: "bemcell79@gmail.com",
-        phone: "085182513584",
+        phone: "825135185084",
         class: "Pleton 6 (VI)",
         passed: false,
         club: "INFORMATIKA"
@@ -147,7 +147,7 @@ const peserta = [
       {
         name: "Muhammad syaiful rizal",
         email: "muhammadrizal19294@gmail.com",
-        phone: "081907052797",
+        phone: "901907058277",
         class: "10 F",
         passed: false,
         club: "MULTIMEDIA"
@@ -155,7 +155,7 @@ const peserta = [
       {
         name: "Syifa afkarina alhadi",
         email: "syifaafkarinaalhadi@gmail.com",
-        phone: "081995959218",
+        phone: "595909218198",
         class: "10 A",
         passed: true,
         club: "D'GRAPH"
@@ -163,7 +163,7 @@ const peserta = [
       {
         name: "Syifa afkarina al hadi",
         email: "syifaafkarinaalhadi@gmail.com",
-        phone: "081995959218",
+        phone: "218599590819",
         class: "10 A",
         passed: true,
         club: "D'GRAPH"
@@ -171,7 +171,7 @@ const peserta = [
       {
         name: "Moch. Kevin Fiorello",
         email: "mochkevinfio@gmail.com",
-        phone: "085233396347",
+        phone: "082363543397",
         class: "10",
         passed: false,
         club: "MULTIMEDIA"
@@ -179,7 +179,7 @@ const peserta = [
       {
         name: "Syifa Aydina Samsi",
         email: "aydinoot@gmail.com",
-        phone: "085148459393",
+        phone: "149308459385",
         class: "10 A",
         passed: true,
         club: "ROBOTIK"
@@ -187,7 +187,7 @@ const peserta = [
       {
         name: "sultonul arifin",
         email: "sultonulafin04@gmail.com",
-        phone: "085707198933",
+        phone: "008989577133",
         class: "10 G",
         passed: false,
         club: "MULTIMEDIA"
@@ -195,7 +195,7 @@ const peserta = [
       {
         name: "Ahmad aqil alhakim",
         email: "ahmadaqil1420@gmail.com",
-        phone: "081333791789",
+        phone: "130177988933",
         class: "10 F",
         passed: false,
         club: "MULTIMEDIA"
@@ -203,7 +203,8 @@ const peserta = [
       {
         name: "Keisya Jingga Raturaka Suryanita",
         email: "keisyapenaklukdunia@gmail.com",
-        phone: "081234794633",
+        phone: "709468",
+        phone: "709412343368",
         class: "10 A",
         passed: true,
         club: "MULTIMEDIA"
@@ -211,7 +212,7 @@ const peserta = [
       {
         name: "Kezia Alivia Dive",
         email: "keziaaliviad@gmail.com",
-        phone: "087878833622",
+        phone: "870362872883",
         class: "10 A",
         passed: true,
         club: "MULTIMEDIA"
@@ -219,7 +220,7 @@ const peserta = [
       {
         name: "Ilham Ardhiansyah",
         email: "ilhamarif392@gmail.com",
-        phone: "085807126921",
+        phone: "268580907121",
         class: "10 A",
         passed: true,
         club: "INFORMATIKA"
@@ -227,7 +228,7 @@ const peserta = [
       {
         name: "Zafron Rabbani Fauzi",
         email: "zafronfauzi@gmail.com",
-        phone: "085797484134",
+        phone: "134579740848",
         class: "10 A",
         passed: true,
         club: "D'GRAPH"
@@ -235,7 +236,7 @@ const peserta = [
       {
         name: "Indah Wahyuni",
         email: "indah280410@gmail.com",
-        phone: "087725906871",
+        phone: "608590871772",
         class: "10 H",
         passed: false,
         club: "INFORMATIKA"
@@ -243,7 +244,7 @@ const peserta = [
       {
         name: "ALIKA ALMIRATUS SHOLEHA",
         email: "alikaalmiratus482@gmail.com",
-        phone: "082132177192",
+        phone: "219213082177",
         class: "10 G",
         passed: false,
         club: "D'GRAPH"
@@ -251,7 +252,7 @@ const peserta = [
       {
         name: "Muhamad Hilman rosidi",
         email: "hilmanbds@gmail.com",
-        phone: "085809182770",
+        phone: "088825009177",
         class: "10 A",
         passed: true,
         club: "ROBOTIK"
@@ -259,7 +260,7 @@ const peserta = [
       {
         name: "Muhammad Yoni Mushlih",
         email: "mmushlih80@gmail.com",
-        phone: "087736434295",
+        phone: "034295877364",
         class: "10 A",
         passed: true,
         club: "ROBOTIK"
@@ -267,7 +268,7 @@ const peserta = [
       {
         name: "M.Bayu Erfandra Putra Andri Firansyah",
         email: "bkece047@gmail.com",
-        phone: "085655903627",
+        phone: "556278569300",
         class: "10 B",
         passed: false,
         club: "MULTIMEDIA"
@@ -275,7 +276,7 @@ const peserta = [
       {
         name: "M. Bayu Erfandra Putra Andri Firansyah",
         email: "bkece047@gmail.com",
-        phone: "085655903627",
+        phone: "655208579036",
         class: "10 B",
         passed: false,
         club: "MULTIMEDIA"
@@ -283,7 +284,7 @@ const peserta = [
       {
         name: "Reyhan Dwi ardyansa",
         email: "reyhandwiardyansa829@gmail.com",
-        phone: "082143636570",
+        phone: "086621433570",
         class: "10 H",
         passed: false,
         club: "D'GRAPH"
@@ -291,7 +292,7 @@ const peserta = [
       {
         name: "Najwa Putri Maulida As-Syaif",
         email: "najwajahwa97@mail.com",
-        phone: "085235540155",
+        phone: "504015852355",
         class: "10 G",
         passed: true,
         club: "INFORMATIKA"
@@ -299,7 +300,7 @@ const peserta = [
       {
         name: "Najwa Putri Maulida As-Syaif",
         email: "najwajahwa97@gmail.com",
-        phone: "085235540155",
+        phone: "504015852355",
         class: "10 G",
         passed: true,
         club: "INFORMATIKA"
@@ -307,7 +308,7 @@ const peserta = [
       {
         name: "Queen nabila khoirunnisa",
         email: "queenssaa09@gmail.com",
-        phone: "085855055076",
+        phone: "050755680585",
         class: "10 C",
         passed: true,
         club: "D'GRAPH"
@@ -315,7 +316,7 @@ const peserta = [
       {
         name: "Muhammad Zidan Latif",
         email: "zidanlatif321@gmail.com",
-        phone: "085704081369",
+        phone: "036085408179",
         class: "10 F",
         passed: true,
         club: "INFORMATIKA"
@@ -323,7 +324,7 @@ const peserta = [
       {
         name: "Nadiyah Zian Walidah",
         email: "zianwalidahnadiah@gmail.com",
-        phone: "08971690601",
+        phone: "69110089760",
         class: "10 E",
         passed: true,
         club: "MULTIMEDIA"
@@ -331,7 +332,7 @@ const peserta = [
       {
         name: "Lutvania Indana Zulfa",
         email: "lutvaniaindanazulfa@gmail.com",
-        phone: "085816223686",
+        phone: "680236858162",
         class: "10 D",
         passed: false,
         club: "MULTIMEDIA"
@@ -339,7 +340,7 @@ const peserta = [
       {
         name: "Naimma Kahila Lubna",
         email: "kahilalubnanaima@gmail.com",
-        phone: "087729197434",
+        phone: "437877209194",
         class: "10 C",
         passed: true,
         club: "D'GRAPH"
@@ -347,7 +348,7 @@ const peserta = [
       {
         name: "Refifa Hanzayyani",
         email: "haniuntung28@gmail.com",
-        phone: "081252695079",
+        phone: "269500825179",
         class: "10 H",
         passed: false,
         club: "MULTIMEDIA"
@@ -355,7 +356,7 @@ const peserta = [
       {
         name: "Aurelia Takhsya Nabila",
         email: "nabilatata307@gmail.com",
-        phone: "089529604131",
+        phone: "598213196004",
         class: "10 E",
         passed: false,
         club: "D'GRAPH"
@@ -363,7 +364,7 @@ const peserta = [
       {
         name: "Najwa Rahmawati",
         email: "najwarahmawati2025@gmail.com",
-        phone: "085645065367",
+        phone: "450656580367",
         class: "10 D",
         passed: false,
         club: "MULTIMEDIA"
@@ -371,7 +372,7 @@ const peserta = [
       {
         name: "Vienika Hanum Masruro",
         email: "hanumcantik1212@gmail.com",
-        phone: "084138513422",
+        phone: "822413850134",
         class: "10 D",
         passed: false,
         club: "D'GRAPH"
@@ -379,7 +380,7 @@ const peserta = [
       {
         name: "muhammad najih arrusydi",
         email: "najiharusydi@gmail.com",
-        phone: "082128548340",
+        phone: "854212340808",
         class: "XI B",
         passed: false,
         club: "MULTIMEDIA"
@@ -387,7 +388,7 @@ const peserta = [
       {
         name: "Rosifa Dwi Febrianta",
         email: "a@gmail.com",
-        phone: "085852075486",
+        phone: "088524865075",
         class: "10 F",
         passed: true,
         club: "INFORMATIKA"
@@ -395,7 +396,7 @@ const peserta = [
       {
         name: "Wildan Muktafi Nabil",
         email: "wildanmuktafinabil@gmail.com",
-        phone: "081249048750",
+        phone: "075084901248",
         class: "10 H",
         passed: true,
         club: "INFORMATIKA"
@@ -403,7 +404,7 @@ const peserta = [
       {
         name: "Ahmad Aqil Alhakim",
         email: "ahmadaqil1420@gmail.com",
-        phone: "081333791789",
+        phone: "917138339078",
         class: "10 F",
         passed: true,
         club: "MULTIMEDIA"
@@ -430,6 +431,7 @@ const peserta = [
         alert("Data tidak ditemukan. Pastikan nama dan email sesuai saat pendaftaran.");
       }
     }
+
 
 
 
