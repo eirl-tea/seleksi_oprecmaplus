@@ -35,7 +35,7 @@ const peserta = [
       {
         name: "Ibrahim Raihan hadi putra",
         email: "ibra67@gmail.com",
-        phone: "081933771390",
+        phone: "933770811390",
         class: "10",
         passed: true,
         club: "MULTIMEDIA"
@@ -43,7 +43,7 @@ const peserta = [
       {
         name: "MUHAMMAD GAOZHAN ALGHIFARI",
         email: "gzhnalghifari@gmail.com",
-        phone: "085258718191",
+        phone: "850819125871",
         class: "PLETON 2",
         passed: false,
         club: "ROBOTIK"
@@ -51,7 +51,7 @@ const peserta = [
       {
         name: "Muhammad Santang Permana",
         email: "permanamuhamad223@gmail.com",
-        phone: "085235680028",
+        phone: "523008256808",
         class: "10",
         passed: false,
         club: "D'GRAPH"
@@ -59,7 +59,7 @@ const peserta = [
       {
         name: "Anisah cahya kamilah",
         email: "cahyakamilah1501@gmail.com",
-        phone: "085233676394",
+        phone: "635233690874",
         class: "10 D",
         passed: true,
         club: "ROBOTIK"
@@ -67,7 +67,7 @@ const peserta = [
       {
         name: "Ahmad Yani",
         email: "ynii7232@gmail.com",
-        phone: "085233228825",
+        phone: "023322882855",
         class: "10",
         passed: false,
         club: "D'GRAPH"
@@ -75,7 +75,7 @@ const peserta = [
       {
         name: "Anggita Anggraini Wijaya",
         email: "anggitaanggraini155@gmail.com",
-        phone: "089523935101",
+        phone: "098520139351",
         class: "10 A",
         passed: true,
         club: "D'GRAPH"
@@ -83,7 +83,7 @@ const peserta = [
       {
         name: "Muhammad Farih Albar",
         email: "muhammadfarihalbar@gmail.com",
-        phone: "085727512326",
+        phone: "727551023826",
         class: "10",
         passed: true,
         club: "D'GRAPH"
@@ -91,7 +91,7 @@ const peserta = [
       {
         name: "NUNARINALHAQ",
         email: "nunarinalh123@gmail.com",
-        phone: "085649855765",
+        phone: "085576585649",
         class: "10 I",
         passed: false,
         club: "D'GRAPH"
@@ -430,6 +430,7 @@ const peserta = [
         alert("Data tidak ditemukan. Pastikan nama dan email sesuai saat pendaftaran.");
       }
     }
+
 
 
 
