@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-image: url("background.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #fff;
+    font-size: 1.15rem;
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 90%;
+    max-height: fit-content;
+    background: linear-gradient(to right, #c00a0a, #e62c31);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.54);
+    color: white;
+    backdrop-filter: blur(20px);
+    padding: 35px;
+    width: 100%;
+    height: 100%;
+    max-width: 90%;
+    max-height: fit-content;
+}
+
+.atas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.bawah {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header img {
+    width: 22vw;
+    padding-right: 30px;
+}
+
+.headerText {
+    padding: 30px;
+    flex: 1 1 300px;
+    color: #fff;
+}
+
+.headerText h1{
+    font-size: 1.4rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.headerText p{
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.biru {
+    color: #8ecaea;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+#result-name {
+    color: #fff;
+    margin-top: -15px;
+    font-size: 2.3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+}
+
+.container p {
+    color: #999;
+    font-size: 0.8rem;
+    text-align: justify;
+}
+
+#result-email {
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+}
+
+#result-class {
+    margin-top: 3px;
+    font-size: 1.2rem;
+}
+
+.daftar-ulang {
+    background: white;
+    color: black;
+    max-width: 555px;
+    max-height: fit-content;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.silakan {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.informasi {
+    font-weight: 300;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.daftar-ulang a {
+    color: #008bd0;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#qr-code {
+    width: 100px;
+    height: 100px;
+}
+
+@media (max-width: 800px) {
+    * {
+        overflow: visible;
+    }
+
+    .container {
+        align-items: stretch;
+        max-width: 100vw;
+        width: 100vw;
+        height: 100%;
+    }
+
+    .header {
+        flex-direction: column-reverse;
+        align-items: stretch;
+        max-width: 100%;
+        width: 100vw;
+        height: 100%;
+        padding: 20px;
+    }
+
+    .header img {
+        width: 70vw;
+        padding: 0;
+        margin: 15px 0 30px;
+    }
+
+    .headerText {
+        padding: 0px;
+        max-height: fit-content;
+        font-weight: 900;
+    }
+
+    .headerText p {
+        font-size: 0.9rem;
+    }
+
+    .atas {
+        flex-direction: column-reverse;
+    }
+
+    .bawah {
+        flex-direction: column;
+    }
+
+    #result-name {
+        font-size: 2rem;
+    }
+
+    #qr-code {
+        margin-bottom: 15px;
+    }
+}
+    </style>
+</head>
+<body>
+        <div class="header">
+            <div class="headerText">
+                <h1>ANDA DINYATAKAN TIDAK LULUS SELEKSI CLUB MA PLUS KETERAMPILAN 2025</h1>
+                <p>MASIH ADA KESEMPATAN MENDAFTAR DAN MENGIKUTI RECRUITMEN CLUB MA PLUS KETERAMPILAN 2026 UNTUK SISWA KELAS 11 TP 2026/2027</p>
+            </div>
+            <img src="logo.png" alt="">
+        </div>
+        <div class="container" id="info">
+            <div class="atas">
+                <div class="result">
+                    <span id="result-phone" class="biru"></span><br>
+                    <span id="result-name"></span><br>
+                </div>
+            </div>
+            <div class="bawah">
+                <div class="result">
+                    <span class="biru">Email</span> <strong id="result-email" class="email-kls"></strong>
+                    <span class="biru">Kelas</span> <strong id="result-class"  class="email-kls"></strong><br>
+                </div>
+            </div>
+        </div>
+    <script>
+        const peserta = JSON.parse(localStorage.getItem("dataPeserta"));
+
+            if (peserta) {
+                if (peserta.passed) {
+                    document.getElementById("result-name").textContent = peserta.name;
+                    document.getElementById("result-phone").textContent = peserta.phone;
+                    document.getElementById("result-email").textContent = peserta.email;
+                    document.getElementById("result-class").textContent = peserta.class;
+                    document.getElementById("result-club").textContent = peserta.club;
+                    if (peserta.club === "D-GRAPH"){
+                        document.getElementById("qr-code").src = "dg.png";
+                    } else if (peserta.club === "MULTIMEDIA"){
+                        document.getElementById("qr-code").src = "mm.png";
+                    } else if (peserta.club === "ROBOTIKA"){
+                        document.getElementById("qr-code").src = "robot.png";
+                    } else {
+                        document.getElementById("qr-code").src = "tkj.png";
+                    }
+                } else {
+                    document.getElementById("result-name").textContent = peserta.name;
+                    document.getElementById("result-phone").textContent = peserta.phone;
+                    document.getElementById("result-email").textContent = peserta.email;
+                    document.getElementById("result-class").textContent = peserta.class;
+                }
+            } else {
+                alert("Data tidak ditemukan. Pastikan nama dan email sesuai saat pendaftaran.");
+            }
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cek Hasil Seleksi Club</title>
+  <style>
+    body {
+      background: #121212;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 40px;
+      border-radius: 10px;
+      max-width: 400px;
+      width: 100%;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      color: #4fc3f7;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    button {
+      background-color: #0288d1;
+      color: white;
+      border: none;
+      padding: 12px;
+      margin-top: 30px;
+      border-radius: 6px;
+      font-size: 16px;
+      width: 100%;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>CEK HASIL SELEKSI CLUB</h1>
+    <label for="name">Nama Lengkap</label>
+    <input type="text" id="name" placeholder="Nama Lengkap" />
+
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Email saat daftar" />
+
+    <button onclick="checkResult()">Cek Hasil</button>
+  </div>
+
+  <script>
+    function checkResult() {
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+
+      if (!name || !email) {
+        alert('Harap isi nama dan email.');
+        return;
+      }
+
+      const scriptURL = 'https://script.google.com/macros/s/11ZuPZhfh3dJBCM-HZXSV0BGi2i6Dm7GjyZTlUdR2JvA/exec';
+
+      fetch(`${scriptURL}?name=${encodeURIComponent(name)}&email=${encodeURIComponent(email)}`)
+        .then(res => res.json())
+        .then(data => {
+          if (data.found) {
+            if (data.status.toLowerCase() === 'lulus') {
+              window.location.href = 'biru.html';  // Ganti dengan URL Web 1
+            } else {
+              window.location.href = 'merah.html';  // Ganti dengan URL Web 2
+            }
+          } else {
+            alert('Data tidak ditemukan. Pastikan nama dan email sesuai saat pendaftaran.');
+          }
+        })
+        .catch(err => {
+          console.error(err);
+          alert('Terjadi kesalahan saat menghubungi server.');
+        });
+    }
+  </script>
+</body>
+</html>

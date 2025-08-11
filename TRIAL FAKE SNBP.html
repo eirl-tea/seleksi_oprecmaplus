@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hasil Seleksi Club MA Plus Keterampilan</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .container {
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 40px;
+      border-radius: 10px;
+      max-width: 600px;
+      width: 100%;
+    }
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 20px;
+      color: #66ccff;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+    }
+    button {
+      background-color: #0099ff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 30px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+    }
+    .result {
+      display: none;
+      padding: 30px;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+    .pass {
+      background-color: #0d47a1;
+    }
+    .fail {
+      background-color: #b71c1c;
+    }
+    .info {
+      margin-top: 20px;
+    }
+    .info strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .whatsapp-link {
+      margin-top: 20px;
+      background: white;
+      padding: 10px;
+      border-radius: 8px;
+      color: #0077cc;
+      font-weight: bold;
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="form-section">
+      <h1>Hasil Seleksi Open Recruitment Club MA Plus Keterampilan 2025</h1>
+      <p>Masukkan Nama Lengkap dan Email:</p>
+      <label for="name">Nama Lengkap</label>
+      <input type="text" id="name" placeholder="Nama Lengkap" />
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Email saat pendaftaran" />
+      <button onclick="checkResult()">Lihat Hasil Seleksi</button>
+    </div>
+
+    <div id="result-section" class="result">
+      <h2 id="result-title"></h2>
+      <div class="info">
+        <strong>Nama:</strong> <span id="result-name"></span><br>
+        <strong>Nomor HP:</strong> <span id="result-phone"></span><br>
+        <strong>Email:</strong> <span id="result-email"></span><br>
+        <strong>Kelas:</strong> <span id="result-class"></span><br>
+        <strong id="result-club-label">Club:</strong> <span id="result-club"></span>
+      </div>
+      <div id="whatsapp-info" style="display: none;">
+        <div class="whatsapp-link">
+          <p>Silakan masuk group chat club:</p>
+          <a href="https://www.chatwhatsapp.com/" target="_blank">https://www.chatwhatsapp.com/</a>
+        </div>
+        <p style="text-align:center; margin-top: 10px;">[QR CODE HERE]</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const data = [
+      {
+        name: "Shane Michael Boose",
+        email: "sombaddie@gmail.com",
+        phone: "081234567890",
+        class: "10 Z",
+        passed: false,
+        club: ""
+      },
+      {
+        name: "Shane Michael Boose",
+        email: "nama@email.com",
+        phone: "081234567890",
+        class: "10 Z",
+        passed: true,
+        club: "D-GRAPH"
+      }
+    ];
+
+    function checkResult() {
+      const name = document.getElementById("name").value.trim().toLowerCase();
+      const email = document.getElementById("email").value.trim().toLowerCase();
+
+      const student = data.find(
+        (d) => d.name.toLowerCase() === name && d.email.toLowerCase() === email
+      );
+
+      const formSection = document.getElementById("form-section");
+      const resultSection = document.getElementById("result-section");
+
+      if (student) {
+        document.getElementById("result-title").textContent = student.passed
+          ? "SELAMAT! ANDA DINYATAKAN LULUS"
+          : "ANDA DINYATAKAN TIDAK LULUS";
+
+        resultSection.className = `result ${student.passed ? "pass" : "fail"}`;
+        document.getElementById("result-name").textContent = student.name;
+        document.getElementById("result-phone").textContent = student.phone;
+        document.getElementById("result-email").textContent = student.email;
+        document.getElementById("result-class").textContent = student.class;
+
+        if (student.passed) {
+          document.getElementById("result-club-label").style.display = "inline";
+          document.getElementById("result-club").textContent = student.club;
+          document.getElementById("whatsapp-info").style.display = "block";
+        } else {
+          document.getElementById("result-club-label").style.display = "none";
+          document.getElementById("result-club").textContent = "";
+          document.getElementById("whatsapp-info").style.display = "none";
+        }
+
+        formSection.style.display = "none";
+        resultSection.style.display = "block";
+      } else {
+        alert("Data tidak ditemukan. Pastikan nama dan email sesuai saat pendaftaran.");
+      }
+    }
+  </script>
+</body>
+</html>
