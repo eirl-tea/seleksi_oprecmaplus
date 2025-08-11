@@ -28,9 +28,9 @@ const peserta = [
         name: "Siti Naurah Firda Famelia Yusrinailah",
         email: "ueue@gmail.com",
         phone: "0873912381109",
-        class: "10 P",
+        class: "10 M",
         passed: true,
-        club: "MEMBATIK"
+        club: "TATA RIAS"
       },
       {
         name: "Ibrahim Raihan hadi putra",
@@ -52,7 +52,7 @@ const peserta = [
         name: "Muhammad Santang Permana",
         email: "permanamuhamad223@gmail.com",
         phone: "085235680028",
-        class: "X",
+        class: "10",
         passed: false,
         club: "D'GRAPH"
       },
@@ -92,7 +92,7 @@ const peserta = [
         name: "NUNARINALHAQ",
         email: "nunarinalh123@gmail.com",
         phone: "085649855765",
-        class: "XI-I",
+        class: "10 I",
         passed: false,
         club: "D'GRAPH"
       },
@@ -108,7 +108,7 @@ const peserta = [
         name: "MUHAMAD NOVAL FERDIAN RISQULLA",
         email: "novalferdianrizqulla041109@gmailm.com",
         phone: "083846024154",
-        class: "X-H",
+        class: "10 H",
         passed: true,
         club: "MULTIMEDIA"
       },
@@ -297,6 +297,14 @@ const peserta = [
         club: "INFORMATIKA"
       },
       {
+        name: "Najwa Putri Maulida As-Syaif",
+        email: "najwajahwa97@gmail.com",
+        phone: "085235540155",
+        class: "10 G",
+        passed: true,
+        club: "INFORMATIKA"
+      },
+      {
         name: "Queen nabila khoirunnisa",
         email: "queenssaa09@gmail.com",
         phone: "085855055076",
@@ -422,5 +430,6 @@ const peserta = [
         alert("Data tidak ditemukan. Pastikan nama dan email sesuai saat pendaftaran.");
       }
     }
+
 
 
